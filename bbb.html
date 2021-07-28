@@ -2843,7 +2843,9 @@
                 var appntInfoDown = '';
 
                 $.each(appntInfo.struct, function (_index, _obj) { //循环验证投保人 值是否为空
-                    if(util.getSessionStorageObj('saleCode') == 'TSMOBILE_SALE_102' || util.getSessionStorageObj('saleCode') == 'TSMOBILE_SALE_112'|| util.getSessionStorageObj('saleCode') == 'TSMOBILE_SALE_113'|| util.getSessionStorageObj('saleCode') == 'TSMOBILE_SALE_114') {
+                    if(util.getSessionStorageObj('saleCode') == 'TSMOBILE_SALE_102' || util.getSessionStorageObj('saleCode') == 'TSMOBILE_SALE_112'
+                        || util.getSessionStorageObj('saleCode') == 'TSMOBILE_SALE_113'|| util.getSessionStorageObj('saleCode') == 'TSMOBILE_SALE_114'
+                            || util.getSessionStorageObj('saleCode') == 'TSMOBILE_SALE_115'|| util.getSessionStorageObj('saleCode') == 'TSMOBILE_SALE_116') {
                         if(sameOneFlag == "Y"){
                             if(_obj.name == '出生日期'){
                                 var date = util.getSessionStorageObj('startDate');
@@ -2898,7 +2900,9 @@
                     var insuredInfoDown = '';
 
                     $.each(insuredInfo.struct, function (_index, _obj) { //循环验证投保人 值是否为空
-                        if(util.getSessionStorageObj('saleCode') == 'TSMOBILE_SALE_102' || util.getSessionStorageObj('saleCode') == 'TSMOBILE_SALE_112'|| util.getSessionStorageObj('saleCode') == 'TSMOBILE_SALE_113'|| util.getSessionStorageObj('saleCode') == 'TSMOBILE_SALE_114') {
+                        if(util.getSessionStorageObj('saleCode') == 'TSMOBILE_SALE_102' || util.getSessionStorageObj('saleCode') == 'TSMOBILE_SALE_112'
+                            || util.getSessionStorageObj('saleCode') == 'TSMOBILE_SALE_113'|| util.getSessionStorageObj('saleCode') == 'TSMOBILE_SALE_114'
+                                || util.getSessionStorageObj('saleCode') == 'TSMOBILE_SALE_115'|| util.getSessionStorageObj('saleCode') == 'TSMOBILE_SALE_116') {
                             if (_obj.name == '出生日期') {
                                 var date = util.getSessionStorageObj('startDate');
                                 if (date == "") {
